@@ -7,11 +7,11 @@
     "node": "21.6.1"
   },
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "nodemon server/server.js",
     "start:dev": "",
-    "start": "node server.js",
+    "start": "node server/server.js",
     "server": "",
-    "build": "webpack --mode production",
+    "build": "cd client && webpack --mode production",
     "install": "",
     "client": ""
   },
@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "idb": "^8.0.0",
     "if-env": "^1.0.4"
   },
   "devDependencies": {
@@ -39,4 +40,5 @@
     "webpack-pwa-manifest": "^4.3.0",
     "workbox-webpack-plugin": "^7.0.0"
   }
-}
+  }
+
