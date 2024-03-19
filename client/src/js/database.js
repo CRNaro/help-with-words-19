@@ -18,7 +18,6 @@ const initdb = async () =>
 // √ TODO: Add logic to a method that accepts some content and adds it to the database
 // Export a functions we will use to PUT/'Update' to the database
 export const putDb = async (content) => {
-  console.error('putDb not implemented');
   // Create a connection to the 'jate' database and version we want to use
   const db = await openDB('jate', 1);
   // Create a new transaction and specify the 'jate' database and data privileges as 'readwrite'
@@ -34,7 +33,6 @@ export const putDb = async (content) => {
 
 // √ TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.error('getDb not implemented');
   const db = await openDB('jate', 1);
   const tx = db.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
